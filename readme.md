@@ -1,65 +1,68 @@
+
 # Lolipop
+
+![alt tag](https://github.com/ooad-2017-2018/Grupa7-RentNekretnine/blob/master/HomeDestination.jpg)
 
 ## Home destination
 
-### Èlanovi tima:
-1. Aldin Mašoviæ
-2. Emina Mehiæ
-3. Ajla Mešiæ
+### ÄŒlanovi tima:
+1. Aldin MaÅ¡oviÄ‡
+2. Emina MehiÄ‡
+3. Ajla MeÅ¡iÄ‡
 
 ### Opis teme
 
-Zbog problema današnjice za pronalaskom posla u svom gradu ili obrazovanja i drugih sliènih problema, ljudi su prinuğeni na pronalazak smještaja van svog grada.
-Home destination je sistem koji nudi iznajmljivanje, odnosno unajmljivanje novog doma.  Svrha ovog sistema je da olakša pronalaenje smještaja u kojem æe boraviti dui period.
-Ovaj sistem nudi online pretragu veæ spomenutog doma, online rezervaciju, online iznajmljivanje, te online plaæanje. 
-Preko ovog sistema takoğer je omoguæena interakcija izmeğu kupca usluga i osobe koja iznajmljuje dati smještaj. 
-Takoğer, ovaj sistem je pogodan za studente iz razloga što nudi lakšu pretragu stanova, te broj slobodnih soba studentskog doma, kao i moguænost izbora broja osoba po sobi.
+Zbog problema danaÅ¡njice za pronalaskom posla u svom gradu ili obrazovanja i drugih sliÄnih problema, ljudi su prinuÄ‘eni na pronalazak smjeÅ¡taja van svog grada.
+Home destination je sistem koji nudi iznajmljivanje, odnosno unajmljivanje novog doma.  Svrha ovog sistema je da olakÅ¡a pronalaÅ¾enje smjeÅ¡taja u kojem Ä‡e boraviti duÅ¾i period.
+Ovaj sistem nudi online pretragu veÄ‡ spomenutog doma, online rezervaciju, online iznajmljivanje, te online plaÄ‡anje. 
+Preko ovog sistema takoÄ‘er je omoguÄ‡ena interakcija izmeÄ‘u kupca usluga i osobe koja iznajmljuje dati smjeÅ¡taj. 
+TakoÄ‘er, ovaj sistem je pogodan za studente iz razloga Å¡to nudi lakÅ¡u pretragu stanova, te broj slobodnih soba studentskog doma, kao i moguÄ‡nost izbora broja osoba po sobi.
 
 ### Procesi
 #### Proces pretrage zeljenog smjestaja
-Kada korisnik pristupa sistemu omoguæena mu je pretraga u zavisnosti od njegovih potreba (tj. filtrirati pretragu). Filteri nude posebne
-moguænosti kao što su odreğeno mjesto, parking, broj osoba, kuæni ljubimac, wifi, cijena, datum dolaska. U sluèaju izbora studentskog doma nude se dodatni
-filteri kao sto su kantina, veš mašina, teretana, kopirnica, mesdid, èitaona, broj cimera.    
+Kada korisnik pristupa sistemu omoguÄ‡ena mu je pretraga u zavisnosti od njegovih potreba (tj. filtrirati pretragu). Filteri nude posebne
+moguÄ‡nosti kao Å¡to su odreÄ‘eno mjesto, parking, broj osoba, kuÄ‡ni ljubimac, wifi, cijena, datum dolaska. U sluÄaju izbora studentskog doma nude se dodatni
+filteri kao sto su kantina, veÅ¡ maÅ¡ina, teretana, kopirnica, mesdÅ¾id, Äitaona, broj cimera.    
 
-#### Proces iznajmljivanja izabranog smještaja
-Pri pretraivanju filtriranog izbora korisnik je u moguænosti da stupi u kontakt sa osobom koja nudi smještaj koji je korisnik odabrao.
-U sluèaju da nema slobodnog smještaja u eljenom periodu, korisniku se prikazuje prvi slobodan datum za rezervaciju odreğenog smještaja.
-Omoguæeno je stupiti u kontakt online, preko kontakt telefona i maila. Nakon izbora odreğenog smještaja korisniku se prikazuje moguænost 
+#### Proces iznajmljivanja izabranog smjeÅ¡taja
+Pri pretraÅ¾ivanju filtriranog izbora korisnik je u moguÄ‡nosti da stupi u kontakt sa osobom koja nudi smjeÅ¡taj koji je korisnik odabrao.
+U sluÄaju da nema slobodnog smjeÅ¡taja u Å¾eljenom periodu, korisniku se prikazuje prvi slobodan datum za rezervaciju odreÄ‘enog smjeÅ¡taja.
+OmoguÄ‡eno je stupiti u kontakt online, preko kontakt telefona i maila. Nakon izbora odreÄ‘enog smjeÅ¡taja korisniku se prikazuje moguÄ‡nost 
 rezervacije.
 
-#### Proces plaæanja
-Nakon rezervacije odreğenog smještaja, nude se neke od moguænosti naèina plaæanja avansa (za jedan mjesec).
-Omoguæeni su sljedeæi naèini plaæanja:
-- Plaæanje unaprijed kreditnom karticom (odnosno putem aplikacije koja biranjem ove moguænosti trai od korisnika da unese odgovarjauæe podatke,
- te se vrši transkcija. Korisniku se dodjeljuje dokaz da je izvršio uplatu).
-- Plaæanje na bankovni raèun.
-- Gotovinsko plaæanje.
+#### Proces plaÄ‡anja
+Nakon rezervacije odreÄ‘enog smjeÅ¡taja, nude se neke od moguÄ‡nosti naÄina plaÄ‡anja avansa (za jedan mjesec).
+OmoguÄ‡eni su sljedeÄ‡i naÄini plaÄ‡anja:
+- PlaÄ‡anje unaprijed kreditnom karticom (odnosno putem aplikacije koja biranjem ove moguÄ‡nosti traÅ¾i od korisnika da unese odgovarjauÄ‡e podatke,
+ te se vrÅ¡i transkcija. Korisniku se dodjeljuje dokaz da je izvrÅ¡io uplatu).
+- PlaÄ‡anje na bankovni raÄun.
+- Gotovinsko plaÄ‡anje.
 
 #### Proces rezervacije
-Nakon što se validira rezervacija vlasnik dobija sve potrebne podatke o osobi koja unajmljuje smještaj,
-te izabrani naèin plaæanja.
+Nakon Å¡to se validira rezervacija vlasnik dobija sve potrebne podatke o osobi koja unajmljuje smjeÅ¡taj,
+te izabrani naÄin plaÄ‡anja.
 
 #### Proces pregleda podataka
-Sistem omoguæava vlasniku pregled osoba koje trenutno stanuju, kao i pregled prethodnih stanara, moguæa dugovanja i ostale sliène informacije.
-Nakon napuštanja smještaja korisniku je omoguæeno da ostavi dojam (tj. ocjenu i odgovarajuæi komentar) o vlasniku kao i o smještaju u kojem je boravio.
-To omoguæava buduæim korisnicima lakši odabir kvalitetnijeg smještaja.
+Sistem omoguÄ‡ava vlasniku pregled osoba koje trenutno stanuju, kao i pregled prethodnih stanara, moguÄ‡a dugovanja i ostale sliÄne informacije.
+Nakon napuÅ¡tanja smjeÅ¡taja korisniku je omoguÄ‡eno da ostavi dojam (tj. ocjenu i odgovarajuÄ‡i komentar) o vlasniku kao i o smjeÅ¡taju u kojem je boravio.
+To omoguÄ‡ava buduÄ‡im korisnicima lakÅ¡i odabir kvalitetnijeg smjeÅ¡taja.
 
 ### Funkcionalnosti
-- moguænost registracije korisnika (osobe koja iznajmljuje, odnosno unajmljuje smještaj)
-- moguænost registracije smještaja koji se iznajmljuje
-- moguænost pretrage 
-- moæunost filtriranja podataka
-- moguænost interfejsa vlasnika i korisnika
-- moguænost rezervacije
-- moguænost plaæanja putem aplikacije
-- moguænost gotovinskog plaæanja
-- moguænost plaæanja na bankovni raèun
-- moguænost ostavljanja dojma
-- moguænost vlasniku pregled liste korisnika koji su koristili i koji koriste smještaj
-- moguænost vlasniku pregled moguæih dugovanja
+- moguÄ‡nost registracije korisnika (osobe koja iznajmljuje, odnosno unajmljuje smjeÅ¡taj)
+- moguÄ‡nost registracije smjeÅ¡taja koji se iznajmljuje
+- moguÄ‡nost pretrage 
+- moÄ‡unost filtriranja podataka
+- moguÄ‡nost interfejsa vlasnika i korisnika
+- moguÄ‡nost rezervacije
+- moguÄ‡nost plaÄ‡anja putem aplikacije
+- moguÄ‡nost gotovinskog plaÄ‡anja
+- moguÄ‡nost plaÄ‡anja na bankovni raÄun
+- moguÄ‡nost ostavljanja dojma
+- moguÄ‡nost vlasniku pregled liste korisnika koji su koristili i koji koriste smjeÅ¡taj
+- moguÄ‡nost vlasniku pregled moguÄ‡ih dugovanja
 
 ### Akteri
-- Gost (korisnik usluga)-osoba koja ima moguænost iznajmljivanja i rezervacije smještaja.
-- Student (korisnik usluga)-iskljuèivo student koji ima moguænost iznajmljivanja i rezervacije smještaja, kao i soba studentskog doma.
-- Vlasnik–osoba koja izdaje smještaj, provjerava podatke gostiju i vrši mjeseènu naplatu i provjeru smještaja.# Grupa7-RentNekretnine
+- Gost (korisnik usluga)-osoba koja ima moguÄ‡nost iznajmljivanja i rezervacije smjeÅ¡taja.
+- Student (korisnik usluga)-iskljuÄivo student koji ima moguÄ‡nost iznajmljivanja i rezervacije smjeÅ¡taja, kao i soba studentskog doma.
+- Vlasnikâ€“osoba koja izdaje smjeÅ¡taj, provjerava podatke gostiju i vrÅ¡i mjeseÄnu naplatu i provjeru smjeÅ¡taja.# Grupa7-RentNekretnine
 # Grupa7-RentNekretnine
