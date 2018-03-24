@@ -13,7 +13,7 @@
 ### Opis teme
 
 Zbog problema današnjice za pronalaskom posla u svom gradu ili obrazovanja i drugih sličnih problema, ljudi su prinuđeni na pronalazak smještaja van svog grada.
-Home destination je sistem koji nudi iznajmljivanje, odnosno unajmljivanje novog doma.  Svrha ovog sistema je da olakša pronalaženje smještaja u kojem će boraviti duži period.
+Home destination je sistem koji nudi iznajmljivanje, odnosno unajmljivanje novog doma.  Svrha ovog sistema je da olakša pronalaženje smještaja u kojem će se boraviti duži period.
 Ovaj sistem nudi online pretragu već spomenutog doma, online rezervaciju, online iznajmljivanje, te online plaćanje. 
 Preko ovog sistema također je omogućena interakcija između kupca usluga i osobe koja iznajmljuje dati smještaj. 
 Također, ovaj sistem je pogodan za studente iz razloga što nudi lakšu pretragu stanova, te broj slobodnih soba studentskog doma, kao i mogućnost izbora broja osoba po sobi.
@@ -64,5 +64,4 @@ To omogućava budućim korisnicima lakši odabir kvalitetnijeg smještaja.
 ### Akteri
 - Gost (korisnik usluga)-osoba koja ima mogućnost iznajmljivanja i rezervacije smještaja.
 - Student (korisnik usluga)-isključivo student koji ima mogućnost iznajmljivanja i rezervacije smještaja, kao i soba studentskog doma.
-- Vlasnik–osoba koja izdaje smještaj, provjerava podatke gostiju i vrši mjesečnu naplatu i provjeru smještaja.# Grupa7-RentNekretnine
-# Grupa7-RentNekretnine
+- Vlasnik–osoba koja izdaje smještaj, provjerava podatke gostiju i vrši mjesečnu naplatu i provjeru smještaja.
