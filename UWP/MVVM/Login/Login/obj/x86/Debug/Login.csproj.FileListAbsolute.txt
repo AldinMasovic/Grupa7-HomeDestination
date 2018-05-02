@@ -1,0 +1,36 @@
+c:\users\mesiceva\documents\visual studio 2015\Projects\Login\Login\obj\x86\Debug\Login.csprojResolveAssemblyReference.cache
+c:\users\mesiceva\documents\visual studio 2015\Projects\Login\Login\obj\x86\Debug\App.g.i.cs
+c:\users\mesiceva\documents\visual studio 2015\Projects\Login\Login\obj\x86\Debug\App.g.cs
+c:\users\mesiceva\documents\visual studio 2015\Projects\Login\Login\obj\x86\Debug\MainPage.g.i.cs
+c:\users\mesiceva\documents\visual studio 2015\Projects\Login\Login\obj\x86\Debug\MainPage.g.cs
+c:\users\mesiceva\documents\visual studio 2015\Projects\Login\Login\obj\x86\Debug\Registracija.g.i.cs
+c:\users\mesiceva\documents\visual studio 2015\Projects\Login\Login\obj\x86\Debug\Registracija.g.cs
+c:\users\mesiceva\documents\visual studio 2015\Projects\Login\Login\obj\x86\Debug\RegistracijaSmjestaja.g.i.cs
+c:\users\mesiceva\documents\visual studio 2015\Projects\Login\Login\obj\x86\Debug\RegistracijaSmjestaja.g.cs
+c:\users\mesiceva\documents\visual studio 2015\Projects\Login\Login\obj\x86\Debug\App.xaml
+c:\users\mesiceva\documents\visual studio 2015\Projects\Login\Login\obj\x86\Debug\MainPage.xaml
+c:\users\mesiceva\documents\visual studio 2015\Projects\Login\Login\obj\x86\Debug\Registracija.xaml
+c:\users\mesiceva\documents\visual studio 2015\Projects\Login\Login\obj\x86\Debug\RegistracijaSmjestaja.xaml
+c:\users\mesiceva\documents\visual studio 2015\Projects\Login\Login\obj\x86\Debug\App.xbf
+c:\users\mesiceva\documents\visual studio 2015\Projects\Login\Login\obj\x86\Debug\MainPage.xbf
+c:\users\mesiceva\documents\visual studio 2015\Projects\Login\Login\obj\x86\Debug\Registracija.xbf
+c:\users\mesiceva\documents\visual studio 2015\Projects\Login\Login\obj\x86\Debug\RegistracijaSmjestaja.xbf
+C:\Users\Mesiceva\Desktop\LoginZadnjaIzmjena\Login\Login\obj\x86\Debug\Login.csprojResolveAssemblyReference.cache
+C:\Users\Mesiceva\Desktop\LoginZadnjaIzmjena\Login\Login\obj\x86\Debug\App.g.i.cs
+C:\Users\Mesiceva\Desktop\LoginZadnjaIzmjena\Login\Login\obj\x86\Debug\App.g.cs
+C:\Users\Mesiceva\Desktop\LoginZadnjaIzmjena\Login\Login\obj\x86\Debug\MainPage.g.i.cs
+C:\Users\Mesiceva\Desktop\LoginZadnjaIzmjena\Login\Login\obj\x86\Debug\MainPage.g.cs
+C:\Users\Mesiceva\Desktop\LoginZadnjaIzmjena\Login\Login\obj\x86\Debug\Registracija.g.i.cs
+C:\Users\Mesiceva\Desktop\LoginZadnjaIzmjena\Login\Login\obj\x86\Debug\Registracija.g.cs
+C:\Users\Mesiceva\Desktop\LoginZadnjaIzmjena\Login\Login\obj\x86\Debug\RegistracijaSmjestaja.g.i.cs
+C:\Users\Mesiceva\Desktop\LoginZadnjaIzmjena\Login\Login\obj\x86\Debug\RegistracijaSmjestaja.g.cs
+C:\Users\Mesiceva\Desktop\LoginZadnjaIzmjena\Login\Login\obj\x86\Debug\XamlTypeInfo.g.cs
+C:\Users\Mesiceva\Desktop\LoginZadnjaIzmjena\Login\Login\obj\x86\Debug\App.xaml
+C:\Users\Mesiceva\Desktop\LoginZadnjaIzmjena\Login\Login\obj\x86\Debug\MainPage.xaml
+C:\Users\Mesiceva\Desktop\LoginZadnjaIzmjena\Login\Login\obj\x86\Debug\Registracija.xaml
+C:\Users\Mesiceva\Desktop\LoginZadnjaIzmjena\Login\Login\obj\x86\Debug\RegistracijaSmjestaja.xaml
+C:\Users\Mesiceva\Desktop\LoginZadnjaIzmjena\Login\Login\obj\x86\Debug\App.xbf
+C:\Users\Mesiceva\Desktop\LoginZadnjaIzmjena\Login\Login\obj\x86\Debug\MainPage.xbf
+C:\Users\Mesiceva\Desktop\LoginZadnjaIzmjena\Login\Login\obj\x86\Debug\Registracija.xbf
+C:\Users\Mesiceva\Desktop\LoginZadnjaIzmjena\Login\Login\obj\x86\Debug\RegistracijaSmjestaja.xbf
+C:\Users\Mesiceva\Desktop\LoginZadnjaIzmjena\Login\Login\obj\x86\Debug\XamlSaveStateFile.xml
