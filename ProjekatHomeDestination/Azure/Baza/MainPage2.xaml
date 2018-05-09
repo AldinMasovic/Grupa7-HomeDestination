@@ -1,0 +1,24 @@
+﻿<Page
+    x:Class="Baza.MainPage2"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Baza"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel Margin="10,10,14,14">
+            <TextBlock Text="Azure Mobile App - UWP App" FontSize="22" Margin="12" />
+            <TextBox x:Name="txtVrsta" PlaceholderText="Vrsta smjestaja" />
+            <TextBox x:Name="txtCijena" PlaceholderText="Cijena" Margin="0,20,0,0"/>
+            <TextBox x:Name="txtKvadratura" PlaceholderText="Kvadratura" Margin="0,20,0,0" />
+            <TextBox x:Name="txtLokacija" PlaceholderText="Lokacija" Margin="0,20,0,0" />
+            <TextBox  x:Name="txtBroj" PlaceholderText="Broj cimera" Margin="0,20,0,0"/>
+            <TextBox x:Name="txtDodati" PlaceholderText="Dodatni opis" Margin="0,20,0,0" />
+            <Button x:Name="btnSpasi" Content="Spasi"  Margin="0,20,0,0" HorizontalAlignment="Stretch" Click="btnSpasi_Click" />
+
+        </StackPanel>
+
+    </Grid>
+</Page>
