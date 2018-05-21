@@ -1,0 +1,1415 @@
+﻿<Page
+    x:Class="Login.ProfilKorisnika"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Login"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid x:Name="grid" Background="Beige">
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:Name="VisualStateGroup">
+                <VisualState x:Name="Phone">
+                    <VisualState.Setters>
+                        <Setter Target="textBox5.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>121,0,0,319</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox5.(FrameworkElement.VerticalAlignment)" Value="Bottom"/>
+                        <Setter Target="textBox5.(FrameworkElement.Width)" Value="252"/>
+                        <Setter Target="textBox4.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>121,380,0,356</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox4.(FrameworkElement.VerticalAlignment)" Value="Stretch"/>
+                        <Setter Target="textBox4.(FrameworkElement.Width)" Value="252"/>
+                        <Setter Target="textBlock6.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>10,0,0,331</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBlock6.(FrameworkElement.VerticalAlignment)" Value="Bottom"/>
+                        <Setter Target="textBlock5.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>10,380,0,348</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBlock5.(FrameworkElement.VerticalAlignment)" Value="Stretch"/>
+                        <Setter Target="textBox3.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>121,343,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox3.(FrameworkElement.Width)" Value="252"/>
+                        <Setter Target="textBox2.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>121,306,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox2.(FrameworkElement.Width)" Value="252"/>
+                        <Setter Target="textBox1.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>121,267,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox1.(FrameworkElement.Width)" Value="252"/>
+                        <Setter Target="textBox.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>121,230,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox.(FrameworkElement.Width)" Value="252"/>
+                        <Setter Target="textBlock4.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>10,343,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBlock4.(FrameworkElement.VerticalAlignment)" Value="Top"/>
+                        <Setter Target="textBlock3.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>10,306,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBlock2.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>10,267,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBlock1.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>10,230,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>295,652,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button.(FrameworkElement.Width)" Value="126"/>
+
+
+                        <Setter Target="button1.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>118,726,178,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="ImagePreview.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="ImagePreview.(FrameworkElement.Height)" Value="126"/>
+                        <Setter Target="ImagePreview.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="ImagePreview.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>73,35,178,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox6.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>121,456,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox7.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>121,493,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox6.(FrameworkElement.Width)" Value="252"/>
+                        <Setter Target="textBox7.(FrameworkElement.Width)" Value="252"/>
+                        <Setter Target="textBlock7.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>60,456,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBlock8.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>22,493,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button4.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>263,726,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button1.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="button3.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>263,689,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button2.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>119,689,178,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button2.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="button2.(FrameworkElement.Width)" Value="NaN"/>
+                    </VisualState.Setters>
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowHeight="768" MinWindowWidth="432"/>
+                    </VisualState.StateTriggers>
+                </VisualState>
+                <VisualState x:Name="Tablet1">
+                    <VisualState.Setters>
+                        <Setter Target="textBox.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="textBox.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>121,156,120,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox1.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox1.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="textBox1.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>121,193,120,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox2.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox2.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="textBox2.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>121,230,120,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox3.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox3.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="textBox3.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>121,267,120,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox4.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox4.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="textBox4.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>121,304,120,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox5.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="textBox5.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox5.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>121,345,120,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>300,597,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button.(FrameworkElement.HorizontalAlignment)" Value="Left"/>
+                        <Setter Target="button.(FrameworkElement.Width)" Value="104"/>
+
+                        <Setter Target="button1.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>409,597,478,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button1.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="ImagePreview.(FrameworkElement.Width)" Value="135"/>
+                        <Setter Target="ImagePreview.(FrameworkElement.Height)" Value="116"/>
+                        <Setter Target="textBox6.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox6.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="textBox6.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>121,382,120,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox7.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox7.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="textBox7.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>121,419,120,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button4.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>0,598,11,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button4.(FrameworkElement.HorizontalAlignment)" Value="Right"/>
+                        <Setter Target="button3.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>0,597,175,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button3.(FrameworkElement.HorizontalAlignment)" Value="Right"/>
+                        <Setter Target="button2.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>0,598,338,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button2.(FrameworkElement.HorizontalAlignment)" Value="Right"/>
+                        <Setter Target="button2.(FrameworkElement.Width)" Value="135"/>
+                    </VisualState.Setters>
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowHeight="640" MinWindowWidth="1024"/>
+                    </VisualState.StateTriggers>
+                </VisualState>
+                <VisualState x:Name="Tablet2">
+                    <VisualState.Setters>
+                        <Setter Target="textBox.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="textBox.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>121,204,78,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox1.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox1.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="textBox1.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>121,284,78,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox2.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox2.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="textBox2.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>121,363,78,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox3.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox3.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="textBox3.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>121,453,78,475</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox4.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox4.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="textBox4.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>121,0,78,374</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox5.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox5.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="textBox5.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>121,0,78,292</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>0,918,78,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button.(FrameworkElement.HorizontalAlignment)" Value="Right"/>
+                        <Setter Target="button.(FrameworkElement.Width)" Value="166"/>
+                        <Setter Target="textBox5.(FrameworkElement.VerticalAlignment)" Value="Bottom"/>
+                        <Setter Target="textBox4.(FrameworkElement.VerticalAlignment)" Value="Bottom"/>
+                        <Setter Target="textBox3.(FrameworkElement.VerticalAlignment)" Value="Stretch"/>
+                        <Setter Target="textBlock6.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>10,0,0,304</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBlock6.(FrameworkElement.VerticalAlignment)" Value="Bottom"/>
+                        <Setter Target="textBlock5.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>10,0,0,366</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBlock5.(FrameworkElement.VerticalAlignment)" Value="Bottom"/>
+                        <Setter Target="textBlock4.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>17,453,0,467</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBlock4.(FrameworkElement.VerticalAlignment)" Value="Stretch"/>
+                        <Setter Target="textBlock3.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>10,363,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBlock2.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>10,284,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBlock1.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>10,204,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+
+
+                        <Setter Target="button1.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>0,918,249,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button1.(FrameworkElement.HorizontalAlignment)" Value="Right"/>
+                        <Setter Target="ImagePreview.(FrameworkElement.Width)" Value="186"/>
+                        <Setter Target="ImagePreview.(FrameworkElement.Height)" Value="164"/>
+                        <Setter Target="button3.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>0,918,389,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button3.(FrameworkElement.HorizontalAlignment)" Value="Right"/>
+                        <Setter Target="button3.(FrameworkElement.Width)" Value="158"/>
+                        <Setter Target="button4.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>0,918,551,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button4.(FrameworkElement.HorizontalAlignment)" Value="Right"/>
+                        <Setter Target="button2.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>590,918,715,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button2.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="button2.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox6.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>121,0,78,213</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox6.(FrameworkElement.VerticalAlignment)" Value="Bottom"/>
+                        <Setter Target="textBox7.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>121,0,78,144</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox7.(FrameworkElement.VerticalAlignment)" Value="Bottom"/>
+                        <Setter Target="textBlock7.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>60,0,0,225</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBlock7.(FrameworkElement.VerticalAlignment)" Value="Bottom"/>
+                        <Setter Target="textBlock8.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>29,0,0,156</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBlock8.(FrameworkElement.VerticalAlignment)" Value="Bottom"/>
+                        <Setter Target="textBox6.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox6.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="textBox7.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox7.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                    </VisualState.Setters>
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowHeight="960" MinWindowWidth="1440"/>
+                    </VisualState.StateTriggers>
+                </VisualState>
+                <VisualState x:Name="Desktop1">
+                    <VisualState.Setters>
+                        <Setter Target="textBox.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="textBox.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>121,156,74,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox1.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox1.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="textBox1.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>121,193,74,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox2.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox2.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="textBox2.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>121,230,74,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox3.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="textBox3.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox3.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>121,267,74,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox4.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox4.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="textBox4.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>121,304,74,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox5.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox5.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="textBox5.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>121,345,74,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>0,651,74,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button.(FrameworkElement.HorizontalAlignment)" Value="Right"/>
+                        <Setter Target="button.(FrameworkElement.Width)" Value="166"/>
+                        <Setter Target="button1.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>0,651,269,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button1.(FrameworkElement.HorizontalAlignment)" Value="Right"/>
+                        <Setter Target="button1.(FrameworkElement.Width)" Value="190"/>
+                        <Setter Target="textBox6.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="textBox6.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox6.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>121,382,74,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox7.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox7.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="textBox7.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>121,419,74,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button4.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>629,651,492,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button4.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="button3.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>438,651,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button2.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>272,651,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                    </VisualState.Setters>
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowHeight="720" MinWindowWidth="1280"/>
+                    </VisualState.StateTriggers>
+                </VisualState>
+                <VisualState x:Name="Desktop2">
+                    <VisualState.Setters>
+                        <Setter Target="button.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>0,1038,150,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button.(FrameworkElement.HorizontalAlignment)" Value="Right"/>
+                        <Setter Target="textBox5.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>121,0,150,279</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox5.(FrameworkElement.VerticalAlignment)" Value="Bottom"/>
+                        <Setter Target="textBox4.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>121,0,150,360</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox4.(FrameworkElement.VerticalAlignment)" Value="Bottom"/>
+                        <Setter Target="textBox3.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>121,0,150,441</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox3.(FrameworkElement.VerticalAlignment)" Value="Bottom"/>
+                        <Setter Target="textBox2.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>121,510,150,538</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox1.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>121,432,150,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>121,345,150,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox2.(FrameworkElement.VerticalAlignment)" Value="Stretch"/>
+                        <Setter Target="textBlock6.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>10,0,0,291</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBlock6.(FrameworkElement.VerticalAlignment)" Value="Bottom"/>
+                        <Setter Target="textBlock5.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>10,0,0,352</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBlock5.(FrameworkElement.VerticalAlignment)" Value="Bottom"/>
+                        <Setter Target="textBlock4.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>10,0,0,433</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBlock4.(FrameworkElement.VerticalAlignment)" Value="Bottom"/>
+                        <Setter Target="textBlock3.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>10,510,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBlock3.(FrameworkElement.VerticalAlignment)" Value="Top"/>
+                        <Setter Target="textBlock2.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>10,432,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBlock1.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>10,345,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox5.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox5.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="textBox4.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox4.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="textBox3.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox3.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="textBox2.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox2.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="textBox1.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox1.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="textBox.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+
+
+                        <Setter Target="button1.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>0,1038,338,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button1.(FrameworkElement.HorizontalAlignment)" Value="Right"/>
+                        <Setter Target="ImagePreview.(FrameworkElement.Width)" Value="320"/>
+                        <Setter Target="ImagePreview.(FrameworkElement.Height)" Value="268"/>
+                        <Setter Target="textBox6.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>121,0,150,194</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox6.(FrameworkElement.VerticalAlignment)" Value="Bottom"/>
+                        <Setter Target="textBox7.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>121,0,150,97</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox7.(FrameworkElement.VerticalAlignment)" Value="Bottom"/>
+                        <Setter Target="button3.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>0,1038,524,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button3.(FrameworkElement.HorizontalAlignment)" Value="Right"/>
+                        <Setter Target="button3.(FrameworkElement.Width)" Value="158"/>
+                        <Setter Target="button4.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>0,1038,732,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button4.(FrameworkElement.HorizontalAlignment)" Value="Right"/>
+                        <Setter Target="button2.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>852,1038,933,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button2.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="button2.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox6.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox6.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="textBox7.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox7.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="textBlock7.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>60,0,0,206</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBlock7.(FrameworkElement.VerticalAlignment)" Value="Bottom"/>
+                        <Setter Target="textBlock8.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>22,0,0,105</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBlock8.(FrameworkElement.VerticalAlignment)" Value="Bottom"/>
+                    </VisualState.Setters>
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowHeight="1080" MinWindowWidth="1920"/>
+                    </VisualState.StateTriggers>
+                </VisualState>
+                <VisualState x:Name="Xbox">
+                    <VisualState.Setters>
+                        <Setter Target="button.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>0,453,72,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button.(FrameworkElement.HorizontalAlignment)" Value="Right"/>
+                        <Setter Target="button.(FrameworkElement.Width)" Value="104"/>
+                        <Setter Target="textBox5.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox5.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="textBox5.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>121,345,72,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox4.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox4.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="textBox4.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>121,304,72,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox3.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox3.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="textBox3.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>121,267,72,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox2.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="textBox2.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox2.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>121,230,72,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox1.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox1.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="textBox1.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>121,193,72,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="textBox.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>121,156,72,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="grid.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button1.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>0,451,181,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button1.(FrameworkElement.HorizontalAlignment)" Value="Right"/>
+                        <Setter Target="textBox6.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox6.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="textBox6.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>121,382,72,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox7.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox7.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="textBox7.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>121,419,72,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button3.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>0,451,322,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button3.(FrameworkElement.HorizontalAlignment)" Value="Right"/>
+                        <Setter Target="button3.(FrameworkElement.Width)" Value="158"/>
+                        <Setter Target="button2.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>340,451,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button4.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>176,451,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+
+                    </VisualState.Setters>
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowHeight="540" MinWindowWidth="960"/>
+                    </VisualState.StateTriggers>
+                </VisualState>
+                <VisualState x:Name="SurfaceHub">
+                    <VisualState.Setters>
+                        <Setter Target="button.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>0,995,142,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button.(FrameworkElement.HorizontalAlignment)" Value="Right"/>
+                        <Setter Target="textBox5.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>121,0,142,211</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox5.(FrameworkElement.VerticalAlignment)" Value="Bottom"/>
+                        <Setter Target="textBox4.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>121,0,142,292</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox4.(FrameworkElement.VerticalAlignment)" Value="Bottom"/>
+                        <Setter Target="textBox3.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>121,0,142,377</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox3.(FrameworkElement.VerticalAlignment)" Value="Bottom"/>
+                        <Setter Target="textBox2.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>121,0,142,466</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox2.(FrameworkElement.VerticalAlignment)" Value="Bottom"/>
+                        <Setter Target="textBox1.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>121,501,142,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox1.(FrameworkElement.VerticalAlignment)" Value="Top"/>
+                        <Setter Target="textBox.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>121,420,142,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBlock6.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>10,0,0,223</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBlock6.(FrameworkElement.VerticalAlignment)" Value="Bottom"/>
+                        <Setter Target="textBlock5.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>10,0,0,284</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBlock5.(FrameworkElement.VerticalAlignment)" Value="Bottom"/>
+                        <Setter Target="textBlock4.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>10,0,0,369</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBlock4.(FrameworkElement.VerticalAlignment)" Value="Bottom"/>
+                        <Setter Target="textBlock3.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>10,0,0,478</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBlock3.(FrameworkElement.VerticalAlignment)" Value="Bottom"/>
+                        <Setter Target="textBlock2.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>10,501,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBlock2.(FrameworkElement.VerticalAlignment)" Value="Top"/>
+                        <Setter Target="textBlock1.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>10,420,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox5.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox5.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="button.(FrameworkElement.Width)" Value="234"/>
+                        <Setter Target="textBox4.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox4.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="textBox3.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox3.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="textBox2.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox2.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="textBox1.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox1.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="textBox.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="button1.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>0,995,430,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button1.(FrameworkElement.HorizontalAlignment)" Value="Right"/>
+                        <Setter Target="button1.(FrameworkElement.Width)" Value="236"/>
+                        <Setter Target="ImagePreview.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>73,91,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="ImagePreview.(FrameworkElement.Width)" Value="240"/>
+                        <Setter Target="ImagePreview.(FrameworkElement.Height)" Value="232"/>
+
+                    </VisualState.Setters>
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowHeight="1080" MinWindowWidth="1920"/>
+                    </VisualState.StateTriggers>
+                </VisualState>
+                <VisualState x:Name="SurfaceHub1">
+                    <VisualState.Setters>
+                        <Setter Target="button.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>0,0,224,58</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button.(FrameworkElement.HorizontalAlignment)" Value="Right"/>
+                        <Setter Target="button.(FrameworkElement.VerticalAlignment)" Value="Bottom"/>
+                        <Setter Target="textBox5.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>121,0,224,322</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox5.(FrameworkElement.VerticalAlignment)" Value="Bottom"/>
+                        <Setter Target="textBox4.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>121,0,224,455</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox4.(FrameworkElement.VerticalAlignment)" Value="Bottom"/>
+                        <Setter Target="textBox3.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>121,0,224,597</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox3.(FrameworkElement.VerticalAlignment)" Value="Bottom"/>
+                        <Setter Target="textBox2.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>121,651,224,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox1.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>121,508,224,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>121,349,224,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBlock6.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>10,0,0,334</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBlock6.(FrameworkElement.VerticalAlignment)" Value="Bottom"/>
+                        <Setter Target="textBlock5.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>10,0,0,447</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBlock5.(FrameworkElement.VerticalAlignment)" Value="Bottom"/>
+                        <Setter Target="textBlock4.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>10,0,0,589</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBlock4.(FrameworkElement.VerticalAlignment)" Value="Bottom"/>
+                        <Setter Target="textBlock3.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>10,651,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBlock2.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>10,508,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBlock1.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>10,349,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+
+                        <Setter Target="textBox5.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox5.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="button.(FrameworkElement.Width)" Value="276"/>
+                        <Setter Target="textBox4.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox4.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="textBox3.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox3.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="textBox2.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox2.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="textBox1.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox1.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="textBox.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="ImagePreview.(FrameworkElement.Height)" Value="245"/>
+                        <Setter Target="ImagePreview.(FrameworkElement.Width)" Value="340"/>
+                        <Setter Target="button1.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>0,0,545,58</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button1.(FrameworkElement.HorizontalAlignment)" Value="Right"/>
+                        <Setter Target="button1.(FrameworkElement.VerticalAlignment)" Value="Bottom"/>
+                        <Setter Target="button1.(FrameworkElement.Width)" Value="232"/>
+                        <Setter Target="button1.(FrameworkElement.Height)" Value="32"/>
+                        <Setter Target="textBox6.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>121,0,224,215</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox6.(FrameworkElement.VerticalAlignment)" Value="Bottom"/>
+                        <Setter Target="textBox7.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>121,0,224,109</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox7.(FrameworkElement.VerticalAlignment)" Value="Bottom"/>
+                        <Setter Target="textBlock7.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>60,0,0,227</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBlock7.(FrameworkElement.VerticalAlignment)" Value="Bottom"/>
+                        <Setter Target="textBlock8.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>22,0,0,121</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBlock8.(FrameworkElement.VerticalAlignment)" Value="Bottom"/>
+                        <Setter Target="button4.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>1194,0,1207,58</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button4.(FrameworkElement.VerticalAlignment)" Value="Bottom"/>
+                        <Setter Target="button3.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>0,0,822,58</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button3.(FrameworkElement.VerticalAlignment)" Value="Bottom"/>
+                        <Setter Target="button2.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>0,0,1026,58</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button2.(FrameworkElement.VerticalAlignment)" Value="Bottom"/>
+                        <Setter Target="textBox6.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox6.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="textBox7.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox7.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="button3.(FrameworkElement.HorizontalAlignment)" Value="Right"/>
+                        <Setter Target="button2.(FrameworkElement.HorizontalAlignment)" Value="Right"/>
+                        <Setter Target="button2.(FrameworkElement.Width)" Value="135"/>
+                        <Setter Target="button4.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                    </VisualState.Setters>
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowHeight="1440" MinWindowWidth="2560"/>
+                    </VisualState.StateTriggers>
+                </VisualState>
+                <VisualState x:Name="lotDevice">
+                    <VisualState.Setters>
+
+                        <Setter Target="textBlock1.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>10,89,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>30,89,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBlock1.(TextBlock.FontSize)" Value="8"/>
+                        <Setter Target="textBox.(FrameworkElement.Height)" Value="10"/>
+                        <Setter Target="textBox.(FrameworkElement.Width)" Value="79"/>
+                        <Setter Target="textBox1.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>30,126,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox1.(FrameworkElement.Width)" Value="79"/>
+                        <Setter Target="textBlock2.(TextBlock.FontSize)" Value="8"/>
+                        <Setter Target="textBlock2.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>0,126,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="grid.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>0,0,-0.375,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBlock3.(TextBlock.FontSize)" Value="8"/>
+                        <Setter Target="textBlock3.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>4,163,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox2.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>31,163,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox2.(FrameworkElement.Width)" Value="78"/>
+                        <Setter Target="textBox3.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>190,35,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox3.(FrameworkElement.Width)" Value="79"/>
+                        <Setter Target="textBlock4.(TextBlock.FontSize)" Value="8"/>
+                        <Setter Target="textBlock4.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>121,35,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBlock4.(FrameworkElement.HorizontalAlignment)" Value="Left"/>
+                        <Setter Target="textBlock4.(FrameworkElement.Width)" Value="49"/>
+                        <Setter Target="textBlock5.(TextBlock.FontSize)" Value="8"/>
+                        <Setter Target="textBlock5.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>121,75,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBlock5.(FrameworkElement.HorizontalAlignment)" Value="Left"/>
+                        <Setter Target="textBox4.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>190,72,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox4.(FrameworkElement.Width)" Value="79"/>
+                        <Setter Target="textBlock6.(TextBlock.FontSize)" Value="8"/>
+                        <Setter Target="textBlock6.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>121,117,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBlock6.(FrameworkElement.HorizontalAlignment)" Value="Left"/>
+                        <Setter Target="textBox5.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>190,109,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox5.(FrameworkElement.Width)" Value="79"/>
+                        <Setter Target="button.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>248,160,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button.(FrameworkElement.HorizontalAlignment)" Value="Left"/>
+                        <Setter Target="button.(FrameworkElement.Width)" Value="79"/>
+                        <Setter Target="button.(Control.FontSize)" Value="8"/>
+                        <Setter Target="textBlock.(TextBlock.FontSize)" Value="8"/>
+                        <Setter Target="ImagePreview.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>10,26,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="ImagePreview.(FrameworkElement.HorizontalAlignment)" Value="Left"/>
+                        <Setter Target="ImagePreview.(FrameworkElement.Width)" Value="61"/>
+                        <Setter Target="ImagePreview.(FrameworkElement.Height)" Value="54"/>
+                        <Setter Target="button1.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>161,160,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button1.(Control.FontSize)" Value="8"/>
+                        <Setter Target="grid.(FrameworkElement.VerticalAlignment)" Value="Stretch"/>
+                        <Setter Target="grid.(FrameworkElement.Height)" Value="NaN"/>
+
+
+                    </VisualState.Setters>
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowHeight="200" MinWindowWidth="355.625"/>
+                    </VisualState.StateTriggers>
+                </VisualState>
+                <VisualState x:Name="lotDevice1">
+                    <VisualState.Setters>
+                        <Setter Target="button.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>0,659,122,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button.(FrameworkElement.HorizontalAlignment)" Value="Right"/>
+                        <Setter Target="textBox5.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>121,0,114,255</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox5.(FrameworkElement.VerticalAlignment)" Value="Bottom"/>
+                        <Setter Target="textBox4.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>121,0,114,292</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox4.(FrameworkElement.VerticalAlignment)" Value="Bottom"/>
+                        <Setter Target="textBox3.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>121,407,114,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox2.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>121,370,0,366</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox2.(FrameworkElement.VerticalAlignment)" Value="Stretch"/>
+                        <Setter Target="textBox1.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>121,333,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>121,296,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBlock6.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>10,0,0,267</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBlock6.(FrameworkElement.VerticalAlignment)" Value="Bottom"/>
+                        <Setter Target="textBlock5.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>10,444,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBlock4.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>10,407,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBlock3.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>10,370,0,378</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBlock3.(FrameworkElement.VerticalAlignment)" Value="Stretch"/>
+                        <Setter Target="textBlock2.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>10,333,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBlock1.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>10,296,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox5.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox5.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="textBox4.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox4.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="textBox3.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox3.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="textBox2.(FrameworkElement.Width)" Value="789"/>
+                        <Setter Target="textBox1.(FrameworkElement.Width)" Value="789"/>
+                        <Setter Target="textBox.(FrameworkElement.Width)" Value="789"/>
+                        <Setter Target="button1.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>0,659,275,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button1.(FrameworkElement.HorizontalAlignment)" Value="Right"/>
+                        <Setter Target="ImagePreview.(FrameworkElement.Height)" Value="185"/>
+                        <Setter Target="ImagePreview.(FrameworkElement.Width)" Value="183"/>
+                        <Setter Target="button4.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>449,659,416,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button4.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="button3.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>291,659,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button2.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>151,659,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox6.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>121,518,114,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox7.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>121,555,114,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBlock7.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>60,513,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBlock8.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>29,550,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox6.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox6.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="textBox7.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox7.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+
+
+
+                    </VisualState.Setters>
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowHeight="768" MinWindowWidth="1024"/>
+                    </VisualState.StateTriggers>
+                </VisualState>
+                <VisualState x:Name="HoloLens">
+                    <VisualState.Setters>
+                        <Setter Target="textBox5.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox5.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="textBox5.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>121,345,55,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox4.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox4.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="textBox4.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>121,304,55,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox3.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox3.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="textBox3.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>121,267,55,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox2.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox2.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="textBox2.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>121,230,55,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox1.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox1.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="textBox1.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>121,193,55,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="textBox.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>121,156,55,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="grid.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>0,0,0.333,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>0,451,55,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button.(FrameworkElement.HorizontalAlignment)" Value="Right"/>
+                        <Setter Target="button1.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>0,451,207,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button1.(FrameworkElement.HorizontalAlignment)" Value="Right"/>
+                        <Setter Target="textBox7.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="textBox7.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox7.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>121,419,55,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox6.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox6.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="textBox6.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>121,382,55,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button1.(FrameworkElement.Height)" Value="29"/>
+                        <Setter Target="button.(FrameworkElement.Height)" Value="29"/>
+                        <Setter Target="button3.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>353,451,342,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button3.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="button3.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="button3.(FrameworkElement.Height)" Value="29"/>
+                        <Setter Target="button4.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>189,448,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button2.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>49,451,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                    </VisualState.Setters>
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowHeight="480" MinWindowWidth="853.33331298"/>
+                    </VisualState.StateTriggers>
+                </VisualState>
+                <VisualState x:Name="Phone1">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowHeight="640" MinWindowWidth="360"/>
+                    </VisualState.StateTriggers>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="10,10,0,0" TextWrapping="Wrap" Text="Vas profil:" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock1" HorizontalAlignment="Left" Margin="10,156,0,0" TextWrapping="Wrap" Text="Ime:" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock2" HorizontalAlignment="Left" Margin="10,193,0,0" TextWrapping="Wrap" Text="Prezime:" VerticalAlignment="Top" d:LayoutOverrides="TopMargin, BottomMargin"/>
+        <TextBlock x:Name="textBlock3" HorizontalAlignment="Left" Margin="10,230,0,0" TextWrapping="Wrap" Text="E- mail:" VerticalAlignment="Top" d:LayoutOverrides="Height, TopPosition, BottomPosition"/>
+        <TextBlock x:Name="textBlock4" HorizontalAlignment="Left" Margin="10,267,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="49">
+            <Run Text="Spol:"/>
+            <LineBreak/>
+            <Run/>
+        </TextBlock>
+        <TextBlock x:Name="textBlock5" HorizontalAlignment="Left" Margin="10,304,0,0" TextWrapping="Wrap" VerticalAlignment="Top">
+            <Run Text="Datum rodjenja:"/>
+            <LineBreak/>
+            <Run/>
+        </TextBlock>
+        <TextBlock x:Name="textBlock6" HorizontalAlignment="Left" Margin="10,345,0,0" TextWrapping="Wrap" Text="Korisnicko ime:" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Margin="121,156,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" IsReadOnly="True" Width="173" d:LayoutOverrides="LeftPosition, RightPosition"
+                 Text="{Binding Ime, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}"
+                 />
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Margin="121,193,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="173" IsReadOnly="True" d:LayoutOverrides="TopMargin, BottomMargin, LeftPosition, RightPosition"
+                 Text="{Binding Prezime, UpdateSourceTrigger=PropertyChanged, Mode=OneTime}"/>
+        <TextBox x:Name="textBox2" HorizontalAlignment="Left" Margin="121,230,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="173" IsReadOnly="True" d:LayoutOverrides="LeftPosition, RightPosition"
+                 Text="{Binding Mail, UpdateSourceTrigger=PropertyChanged, Mode=OneTime}"/>
+        <TextBox x:Name="textBox3" HorizontalAlignment="Left" Margin="121,267,0,0" TextWrapping="Wrap" VerticalAlignment="Top" IsReadOnly="True" Width="173" d:LayoutOverrides="LeftPosition, RightPosition" TextChanged="textBox3_TextChanged"
+                 Text="{Binding Spol, UpdateSourceTrigger=PropertyChanged, Mode=OneTime}"/>
+        <TextBox x:Name="textBox4" HorizontalAlignment="Left" Margin="121,304,0,0" TextWrapping="Wrap" VerticalAlignment="Top" IsReadOnly="True" Width="173" d:LayoutOverrides="LeftPosition, RightPosition"
+                 Text="{Binding Datum, UpdateSourceTrigger=PropertyChanged, Mode=OneTime}"/>
+        <TextBox x:Name="textBox5" HorizontalAlignment="Left" Margin="121,345,0,0" TextWrapping="Wrap" VerticalAlignment="Top" IsReadOnly="True" Width="173" d:LayoutOverrides="LeftPosition, RightPosition"
+                 Text="{Binding Username, UpdateSourceTrigger=PropertyChanged, Mode=OneTime}"/>
+        <Button x:Name="button" Content="Odjavi se" HorizontalAlignment="Left" Margin="202,524,0,0" VerticalAlignment="Top" Width="148" d:LayoutOverrides="LeftMargin, RightMargin"
+                Command="{Binding Path=Nazad}" />
+        <Button x:Name="button1" Content="Registruj smjestaj" HorizontalAlignment="Left" Margin="60,598,0,0" VerticalAlignment="Top" 
+                Command="{Binding Path=RegistrujSmjestaj}" d:LayoutOverrides="LeftMargin, RightMargin"/>
+        <StackPanel x:Name="ImagePreview" HorizontalAlignment="Left" Height="100" Margin="73,35,0,0" VerticalAlignment="Top" Width="100" Background="Gray" d:LayoutOverrides="VerticalAlignment, LeftMargin, RightMargin"/>
+        <TextBlock x:Name="textBlock7" HorizontalAlignment="Left" Margin="60,382,0,0" TextWrapping="Wrap" Text="Adresa:" VerticalAlignment="Top"/>
+        <TextBlock x:Name="textBlock8" HorizontalAlignment="Left" Margin="22,419,0,0" TextWrapping="Wrap" Text="Broj tel/mob:" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBox6" HorizontalAlignment="Left" Margin="121,382,0,0" TextWrapping="Wrap" VerticalAlignment="Top" IsReadOnly="True" Width="173" d:LayoutOverrides="LeftPosition, RightPosition"
+                 Text="{Binding Adresa, UpdateSourceTrigger=PropertyChanged, Mode=OneTime}"/>
+        <TextBox x:Name="textBox7" HorizontalAlignment="Left" Margin="121,419,0,0" TextWrapping="Wrap"  VerticalAlignment="Top" IsReadOnly="True" Width="173" d:LayoutOverrides="LeftPosition, RightPosition"
+                 Text="{Binding Broj, UpdateSourceTrigger=PropertyChanged, Mode=OneTime}"/>
+        <Button x:Name="button2" Content="Pretrazi smjestaj" HorizontalAlignment="Left" Margin="60,561,0,0" VerticalAlignment="Top" Width="135"/>
+        <Button x:Name="button3" Content="Iznajmljeni smjestaj" HorizontalAlignment="Left" Margin="202,561,0,0" VerticalAlignment="Top" Width="158" d:LayoutOverrides="LeftMargin, RightMargin"/>
+        <Button x:Name="button4" Content="Registrovani smjestaj" HorizontalAlignment="Left" Margin="201,598,0,0" VerticalAlignment="Top" d:LayoutOverrides="Width, LeftPosition, RightPosition"/>
+
+    </Grid>
+</Page>

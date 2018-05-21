@@ -1,0 +1,840 @@
+﻿<Page
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Login"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Foundation="using:Windows.Foundation" 
+    x:Class="Login.MainPage"
+    mc:Ignorable="d">
+
+    <Grid x:Name="grid" Background="Beige">
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:Name="VisualStateGroup">
+                <VisualState x:Name="Phone">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowHeight="630" MinWindowWidth="360"/>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="grid.(UIElement.RenderTransformOrigin)">
+                            <Setter.Value>
+                                <Foundation:Point>0.585,0.533</Foundation:Point>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="grid.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>0,10,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="image.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>52,0,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="image.(FrameworkElement.Width)" Value="257"/>
+                        <Setter Target="image.(FrameworkElement.Height)" Value="166"/>
+                        <Setter Target="image.(UIElement.Visibility)" Value="Visible"/>
+                        <Setter Target="image.(FrameworkElement.RequestedTheme)" Value="Default"/>
+                    </VisualState.Setters>
+                    <Storyboard>
+                        <DoubleAnimation Duration="0" To="0.3" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image" d:IsOptimized="True"/>
+                    </Storyboard>
+                </VisualState>
+                <VisualState x:Name="Desktop">
+                    <VisualState.Setters>
+                        <Setter Target="grid.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>0,0,-786,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="Korisnicko.(FrameworkElement.Height)" Value="NaN"/>
+                        <Setter Target="Korisnicko.(FrameworkElement.HorizontalAlignment)" Value="Left"/>
+                        <Setter Target="Korisnicko.(FrameworkElement.VerticalAlignment)" Value="Top"/>
+                        <Setter Target="textBox.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>640,154,219,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="textBox.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox.(FrameworkElement.Height)" Value="48"/>
+                        <Setter Target="Korisnicko.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>211,154,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox_Copy.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>640,256,219,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox_Copy.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="textBox_Copy.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox_Copy.(FrameworkElement.Height)" Value="48"/>
+                        <Setter Target="Sifra.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>211,256,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="checkBox.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>640,387,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="checkBox.(FrameworkElement.VerticalAlignment)" Value="Top"/>
+                        <Setter Target="button.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>0,525,169,495</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button.(FrameworkElement.HorizontalAlignment)" Value="Right"/>
+                        <Setter Target="button.(FrameworkElement.Width)" Value="200"/>
+                        <Setter Target="button1.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>1173,825,1261,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button1.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="textBlock.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>485,0,0,324</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBlock.(FrameworkElement.Width)" Value="512"/>
+                        <Setter Target="textBlock.(FrameworkElement.Height)" Value="70"/>
+                        <Setter Target="button1.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBlock.(FrameworkElement.VerticalAlignment)" Value="Bottom"/>
+                        <Setter Target="textBlock.(TextBlock.FontSize)" Value="36"/>
+                        <Setter Target="Korisnicko.(TextBlock.FontSize)" Value="36"/>
+                        <Setter Target="button.(Control.FontSize)" Value="36"/>
+                        <Setter Target="button1.(Control.FontSize)" Value="36"/>
+                        <Setter Target="Sifra.(TextBlock.FontSize)" Value="36"/>
+                        <Setter Target="checkBox.(Control.FontSize)" Value="36"/>
+                        <Setter Target="checkBox.(FrameworkElement.Height)" Value="119"/>
+                        <Setter Target="textBox.(UIElement.RenderTransform).(CompositeTransform.ScaleY)" Value="1"/>
+                        <Setter Target="button.(FrameworkElement.VerticalAlignment)" Value="Stretch"/>
+                    </VisualState.Setters>
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowHeight="720" MinWindowWidth="2066"/>
+                    </VisualState.StateTriggers>
+                </VisualState>
+                <VisualState x:Name="Desktop1">
+                    <VisualState.Setters>
+                        <Setter Target="Korisnicko.(TextBlock.FontSize)" Value="36"/>
+                        <Setter Target="Sifra.(TextBlock.FontSize)" Value="36"/>
+                        <Setter Target="checkBox.(Control.FontSize)" Value="36"/>
+                        <Setter Target="button.(Control.FontSize)" Value="36"/>
+                        <Setter Target="textBlock.(TextBlock.FontSize)" Value="36"/>
+                        <Setter Target="textBlock.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>496,0,0,418</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBlock.(FrameworkElement.HorizontalAlignment)" Value="Left"/>
+                        <Setter Target="button1.(Control.FontSize)" Value="36"/>
+                        <Setter Target="button1.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>749,0,872,270</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button1.(FrameworkElement.VerticalAlignment)" Value="Bottom"/>
+                        <Setter Target="button1.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="button.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>0,521,259,499</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button.(FrameworkElement.HorizontalAlignment)" Value="Right"/>
+                        <Setter Target="textBlock.(FrameworkElement.VerticalAlignment)" Value="Bottom"/>
+                        <Setter Target="textBox.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>611,341,263,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="Korisnicko.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>215,332,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox.(FrameworkElement.Height)" Value="47"/>
+                        <Setter Target="textBox.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="textBox.(UIElement.RenderTransform).(CompositeTransform.ScaleY)" Value="-1"/>
+                        <Setter Target="textBox_Copy.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>611,419,263,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox_Copy.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox_Copy.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="textBox_Copy.(FrameworkElement.Height)" Value="50"/>
+                        <Setter Target="textBox_Copy.(UIElement.RenderTransform).(CompositeTransform.ScaleY)" Value="-1"/>
+                        <Setter Target="Sifra.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>490,411,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="checkBox.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>608,495,0,532</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button.(FrameworkElement.VerticalAlignment)" Value="Stretch"/>
+                        <Setter Target="checkBox.(FrameworkElement.VerticalAlignment)" Value="Stretch"/>
+                        <Setter Target="image.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>365,10,310,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="image.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="image.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="image.(FrameworkElement.Height)" Value="309"/>
+                        <Setter Target="button.(FrameworkElement.Width)" Value="210"/>
+                    </VisualState.Setters>
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowHeight="1080" MinWindowWidth="1920"/>
+                    </VisualState.StateTriggers>
+                    <Storyboard>
+                        <DoubleAnimation Duration="0" To="0.3" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image" d:IsOptimized="True"/>
+                    </Storyboard>
+                </VisualState>
+                <VisualState x:Name="Tablet">
+                    <VisualState.Setters>
+                        <Setter Target="textBox.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>364,166,203,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="textBox.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox_Copy.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>364,203,203,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox_Copy.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="textBox_Copy.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="Korisnicko.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>155,166,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="Sifra.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>155,203,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="checkBox.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>364,265,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>0,301,203,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button.(FrameworkElement.HorizontalAlignment)" Value="Right"/>
+                        <Setter Target="button1.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>0,473,414,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button1.(FrameworkElement.HorizontalAlignment)" Value="Right"/>
+                        <Setter Target="textBlock.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>364,390,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="image.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="image.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="image.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>150,10,203,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="image.(FrameworkElement.Height)" Value="151"/>
+                    </VisualState.Setters>
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowHeight="630" MinWindowWidth="1024"/>
+                    </VisualState.StateTriggers>
+                    <Storyboard>
+                        <DoubleAnimation Duration="0" To="0.3" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image" d:IsOptimized="True"/>
+                    </Storyboard>
+                </VisualState>
+                <VisualState x:Name="Tablet1">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowHeight="960" MinWindowWidth="1440"/>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+                        <Setter Target="Korisnicko.(TextBlock.FontSize)" Value="20"/>
+                        <Setter Target="Sifra.(TextBlock.FontSize)" Value="22"/>
+                        <Setter Target="checkBox.(Control.FontSize)" Value="22"/>
+                        <Setter Target="button.(Control.FontSize)" Value="22"/>
+                        <Setter Target="button1.(Control.FontSize)" Value="22"/>
+                        <Setter Target="textBlock.(TextBlock.FontSize)" Value="22"/>
+                        <Setter Target="button1.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>617,709,594,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button1.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="button1.(FrameworkElement.Height)" Value="45"/>
+                        <Setter Target="textBlock.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>365,0,0,359</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBlock.(FrameworkElement.VerticalAlignment)" Value="Bottom"/>
+                        <Setter Target="button.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>0,447,126,472</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="checkBox.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>364,377,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox_Copy.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>364,283,126,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="Sifra.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>298,278,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>364,246,126,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="textBox_Copy.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox_Copy.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="Korisnicko.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>150,246,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button.(FrameworkElement.VerticalAlignment)" Value="Stretch"/>
+                        <Setter Target="button.(FrameworkElement.HorizontalAlignment)" Value="Right"/>
+                        <Setter Target="button.(FrameworkElement.Width)" Value="229"/>
+                        <Setter Target="button1.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="image.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>334,0,382,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="image.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="image.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="image.(FrameworkElement.Height)" Value="241"/>
+                    </VisualState.Setters>
+                    <Storyboard>
+                        <DoubleAnimation Duration="0" To="0.3" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image" d:IsOptimized="True"/>
+                    </Storyboard>
+                </VisualState>
+                <VisualState x:Name="Xbox">
+                    <VisualState.Setters>
+                        <Setter Target="textBox.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>265,171,179,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="textBox_Copy.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>265,208,179,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox_Copy.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox_Copy.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="Korisnicko.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>104,171,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="Sifra.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>219,208,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="checkBox.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>265,274,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>0,284,179,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button.(FrameworkElement.HorizontalAlignment)" Value="Right"/>
+                        <Setter Target="textBlock.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>265,380,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button1.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>371,423,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="image.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="image.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="image.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>219,5,237,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="image.(FrameworkElement.Height)" Value="161"/>
+                    </VisualState.Setters>
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowHeight="540" MinWindowWidth="960"/>
+                    </VisualState.StateTriggers>
+                    <Storyboard>
+                        <DoubleAnimation Duration="0" To="0.3" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image" d:IsOptimized="True"/>
+                    </Storyboard>
+                </VisualState>
+                <VisualState x:Name="SurfaceHub">
+                    <VisualState.Setters>
+                        <Setter Target="textBox.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>425,241,271,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="textBox_Copy.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>425,305,271,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox_Copy.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox_Copy.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="Korisnicko.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>265,241,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="Sifra.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>380,305,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="checkBox.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>425,366,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>0,406,271,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button.(FrameworkElement.HorizontalAlignment)" Value="Right"/>
+                        <Setter Target="button.(FrameworkElement.VerticalAlignment)" Value="Top"/>
+                        <Setter Target="button.(FrameworkElement.Width)" Value="159"/>
+                        <Setter Target="textBlock.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>425,0,0,461</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBlock.(FrameworkElement.VerticalAlignment)" Value="Bottom"/>
+                        <Setter Target="button1.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>580,0,0,393</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button1.(FrameworkElement.VerticalAlignment)" Value="Bottom"/>
+                        <Setter Target="button1.(FrameworkElement.Width)" Value="302"/>
+                    </VisualState.Setters>
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowHeight="1080" MinWindowWidth="1920"/>
+                    </VisualState.StateTriggers>
+                </VisualState>
+                <VisualState x:Name="SurfaceHub1">
+                    <VisualState.Setters>
+                        <Setter Target="textBox.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>567,274,402,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox_Copy.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>567,359,402,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="textBox_Copy.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox_Copy.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="checkBox.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>567,458,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>0,531,402,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button.(FrameworkElement.HorizontalAlignment)" Value="Right"/>
+                        <Setter Target="button.(FrameworkElement.Width)" Value="185"/>
+                        <Setter Target="Korisnicko.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>346,274,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="Sifra.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>461,359,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBlock.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>589,683,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button1.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>807,0,0,628</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button1.(FrameworkElement.VerticalAlignment)" Value="Bottom"/>
+                        <Setter Target="button1.(FrameworkElement.Width)" Value="334"/>
+                        <Setter Target="Korisnicko.(TextBlock.FontSize)" Value="22"/>
+                        <Setter Target="Sifra.(TextBlock.FontSize)" Value="22"/>
+                        <Setter Target="checkBox.(Control.FontSize)" Value="22"/>
+                        <Setter Target="textBlock.(TextBlock.FontSize)" Value="22"/>
+                        <Setter Target="button.(Control.FontSize)" Value="22"/>
+                        <Setter Target="button1.(Control.FontSize)" Value="22"/>
+                        <Setter Target="textBox.(Control.FontSize)" Value="22"/>
+                        <Setter Target="textBox_Copy.(Control.FontSize)" Value="22"/>
+                        <Setter Target="image.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>162,0,214,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="image.(FrameworkElement.Height)" Value="274"/>
+                        <Setter Target="image.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="image.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                    </VisualState.Setters>
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowHeight="1440" MinWindowWidth="2560"/>
+                    </VisualState.StateTriggers>
+                    <Storyboard>
+                        <DoubleAnimation Duration="0" To="0.3" Storyboard.TargetProperty="(UIElement.Opacity)" Storyboard.TargetName="image" d:IsOptimized="True"/>
+                    </Storyboard>
+                </VisualState>
+                <VisualState x:Name="loTDevice">
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowHeight="200" MinWindowWidth="355.625"/>
+                    </VisualState.StateTriggers>
+                    <VisualState.Setters>
+
+                        <Setter Target="Korisnicko.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>0,27,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox.(FrameworkElement.Width)" Value="120"/>
+                        <Setter Target="textBox.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>172,27,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="Sifra.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>115,75,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox_Copy.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>172,75,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox_Copy.(FrameworkElement.Width)" Value="120"/>
+                        <Setter Target="checkBox.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>172,107,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>251,144,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBlock.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>10,128,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button1.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>75,154,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="grid.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>0,0,-0.375,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="grid.(FrameworkElement.VerticalAlignment)" Value="Top"/>
+                        <Setter Target="grid.(FrameworkElement.Height)" Value="202"/>
+                    </VisualState.Setters>
+                </VisualState>
+                <VisualState x:Name="loTDevice1">
+                    <VisualState.Setters>
+                        <Setter Target="textBox.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>365,166,215,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="textBox.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox_Copy.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>365,203,215,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox_Copy.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="textBox_Copy.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="Korisnicko.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>196,166,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="Sifra.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>311,203,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="checkBox.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>365,266,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>0,305,215,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button.(FrameworkElement.HorizontalAlignment)" Value="Right"/>
+                        <Setter Target="textBlock.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>365,471,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button1.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>458,528,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="grid.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>0,10,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="grid.(FrameworkElement.VerticalAlignment)" Value="Stretch"/>
+                        <Setter Target="grid.(FrameworkElement.Height)" Value="NaN"/>
+                        <Setter Target="grid.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="grid.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="image.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>365,-5,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="image.(FrameworkElement.Width)" Value="372"/>
+                        <Setter Target="image.(FrameworkElement.Height)" Value="166"/>
+                    </VisualState.Setters>
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowHeight="768" MinWindowWidth="1024"/>
+                    </VisualState.StateTriggers>
+                </VisualState>
+                <VisualState x:Name="loTDevice2">
+                    <VisualState.Setters>
+                        <Setter Target="textBox.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>643,203,329,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox_Copy.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>643,267,329,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="Korisnicko.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>265,203,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="Korisnicko.(TextBlock.FontSize)" Value="30"/>
+                        <Setter Target="textBox.(Control.FontSize)" Value="30"/>
+                        <Setter Target="Sifra.(TextBlock.FontSize)" Value="30"/>
+                        <Setter Target="textBox_Copy.(Control.FontSize)" Value="30"/>
+                        <Setter Target="checkBox.(Control.FontSize)" Value="30"/>
+                        <Setter Target="button.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>1367,451,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBlock.(TextBlock.FontSize)" Value="30"/>
+                        <Setter Target="button1.(Control.FontSize)" Value="30"/>
+                        <Setter Target="button.(Control.FontSize)" Value="30"/>
+                        <Setter Target="textBox.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="textBox_Copy.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox_Copy.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="Sifra.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>494,268,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="checkBox.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>643,366,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button.(FrameworkElement.Width)" Value="224"/>
+                        <Setter Target="textBlock.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>634,0,0,377</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBlock.(FrameworkElement.VerticalAlignment)" Value="Bottom"/>
+                        <Setter Target="button1.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>831,0,789,272</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button1.(FrameworkElement.VerticalAlignment)" Value="Bottom"/>
+                        <Setter Target="button1.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="grid.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="grid.(FrameworkElement.VerticalAlignment)" Value="Stretch"/>
+                        <Setter Target="grid.(FrameworkElement.Height)" Value="NaN"/>
+                        <Setter Target="image.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>587,0,629,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="image.(FrameworkElement.Height)" Value="203"/>
+                        <Setter Target="image.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="image.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                    </VisualState.Setters>
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowHeight="1080" MinWindowWidth="1920"/>
+                    </VisualState.StateTriggers>
+                </VisualState>
+                <VisualState x:Name="HoloLens">
+                    <VisualState.Setters>
+                        <Setter Target="textBox.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>265,171,134,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="textBox.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="textBox_Copy.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>265,208,134,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="textBox_Copy.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="textBox_Copy.(FrameworkElement.Width)" Value="NaN"/>
+                        <Setter Target="Korisnicko.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>104,171,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="Sifra.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>219,208,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="checkBox.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>265,240,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>0,287,134,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button.(FrameworkElement.HorizontalAlignment)" Value="Right"/>
+                        <Setter Target="textBlock.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>265,329,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button1.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>393,374,364,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="button1.(FrameworkElement.HorizontalAlignment)" Value="Stretch"/>
+                        <Setter Target="grid.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>10,0,0.333,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="image.(FrameworkElement.Margin)">
+                            <Setter.Value>
+                                <Thickness>265,0,0,0</Thickness>
+                            </Setter.Value>
+                        </Setter>
+                        <Setter Target="image.(FrameworkElement.Width)" Value="328"/>
+                        <Setter Target="image.(FrameworkElement.Height)" Value="171"/>
+                    </VisualState.Setters>
+                    <VisualState.StateTriggers>
+                        <AdaptiveTrigger MinWindowHeight="480" MinWindowWidth="853.33331298"/>
+                    </VisualState.StateTriggers>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+        <TextBlock x:Name="Korisnicko" HorizontalAlignment="Left" Margin="10,166,0,0" TextWrapping="Wrap" Text="Korisnicko ime/e-mail:" VerticalAlignment="Top"/>
+        <TextBox x:Name="textBox"
+                 HorizontalAlignment="Left" 
+                 Margin="155,166,0,0" 
+                 TextWrapping="Wrap" 
+                 VerticalAlignment="Top" 
+                 Width="188" 
+                 RenderTransformOrigin="0.5,0.5"
+                 Text="{Binding Username, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}" TextChanged="textBox_TextChanged" d:LayoutOverrides="LeftPosition, RightPosition">
+
+            <TextBox.RenderTransform>
+                <CompositeTransform/>
+            </TextBox.RenderTransform>
+        </TextBox>
+        <TextBlock x:Name="Sifra" HorizontalAlignment="Left" Margin="10,203,0,0" TextWrapping="Wrap" Text="Sifra:" VerticalAlignment="Top" d:LayoutOverrides="VerticalAlignment"/>
+        <PasswordBox
+            x:Name="textBox_Copy" 
+            HorizontalAlignment="Left" 
+            Margin="155,203,0,0"  
+            VerticalAlignment="Top" 
+            Width="188" 
+            RenderTransformOrigin="0.5,0.5" 
+            d:LayoutOverrides="VerticalAlignment, LeftMargin, RightMargin, LeftPosition, RightPosition"
+            Password="{Binding Password, UpdateSourceTrigger=PropertyChanged, Mode=TwoWay}">
+            <PasswordBox.RenderTransform>
+                <CompositeTransform/>
+            </PasswordBox.RenderTransform>
+        </PasswordBox>
+        <CheckBox x:Name="checkBox" Content="Zapamti me" HorizontalAlignment="Left" Margin="155,274,0,0" VerticalAlignment="Top" d:LayoutOverrides="Height, TopPosition, BottomPosition"/>
+        <Button x:Name="button" Content="Prijavi se" HorizontalAlignment="Left" Margin="265,311,0,0" VerticalAlignment="Top"  Command="{Binding Path=PrijaviSe}" d:LayoutOverrides="Height, TopPosition, BottomPosition"/>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="52,371,0,0" TextWrapping="Wrap" Text="Nemate profil?" VerticalAlignment="Top"/>
+        <Button x:Name="button1" Content="Registruj se" HorizontalAlignment="Left" Margin="155,396,0,0" VerticalAlignment="Top"   Command="{Binding Path=Nazad}" d:LayoutOverrides="LeftPosition, RightPosition"/>
+        <Image x:Name="image" HorizontalAlignment="Left" Height="27" Margin="10,0,0,0" VerticalAlignment="Top" Width="49" Source="ms-appx:///Assets/logo/house-roof-hi.png" d:LayoutOverrides="VerticalAlignment" Opacity="0.3" />
+
+
+    </Grid>
+</Page>
