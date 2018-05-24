@@ -1,0 +1,63 @@
+﻿@model IEnumerable<HomeDestination.Models.Rezervacija>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.SmjestajId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.KorisnikId)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.NacinPlacanja)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Dugovanja)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DatDolaska)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.DatOdlaska)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.SmjestajId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.KorisnikId)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.NacinPlacanja)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Dugovanja)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DatDolaska)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.DatOdlaska)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>
