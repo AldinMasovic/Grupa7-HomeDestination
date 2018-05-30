@@ -1,0 +1,111 @@
+﻿@model IEnumerable<appHomeDestination.Models.FilterDom>
+
+@{
+    ViewBag.Title = "Index";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Namjestaj)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Parking)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.WiFi)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Lift)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Klima)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Balkon)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Novogradnja)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Alarm)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Videonadzor)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TV)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Teretana)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Citaona)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Kantina)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.VesMasina)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Namjestaj)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Parking)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.WiFi)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Lift)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Klima)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Balkon)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Novogradnja)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Alarm)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Videonadzor)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TV)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Teretana)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Citaona)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Kantina)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.VesMasina)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+        </td>
+    </tr>
+}
+
+</table>
