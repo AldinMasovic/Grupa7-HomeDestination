@@ -1,0 +1,64 @@
+1. Singleton pattern
+Uloga Singleton paterna je da osigura da se klasa može instancirati samo jednom i da osigura globalni pristup kreiranoj instanci klase. Postoji više objekata koje je potrebno samo jednom instancirati i nad kojim je potrebna jedinstvena kontrola pristupa. Neki od njih su: thread
+pools (skupina niti), objekti koji upravljaju setovanjem registara, objekti koji se koriste za logiranje, objekti koji se koriste kao drajveri za razne ureðaje kao što su printeri i grafièke kartice. Instanciranje više nego jednom navedenih objekata mogu se prouzrokovati problemi kao što su nekorektno ponašanje programa, neadekvantno korištenje resursa ili nekonzistentan rezultat.
+Projekat:
+U našem projetu ovaj patern nije iskoristen. Meðutim, mogli smo ga iskoristiti u klasi HomeDestination jer nam je potrebna samo jedna instanca te klase.
+Dodatni zahtjevi bi bili sljedeci:
+-Postavljanje privatne vidljivosti za konstruktor i dodavanje privatnog static konstruktora.
+-Dodavanje privatnog static read-only objekta koji se interno instancira korištenjem
+privatnog konstruktora.
+-Dodavanje javno vidljive osobine ( public static property) ili metode koja pristupa
+privatnom objektu i instancira ga ako objekat veæ ne postoji.
+
+
+2. Prototype pattern
+Uloga Prototype paterna je da kreira nove objekte klonirajuci jednu od postojecih prototip instanci (postojeci objekat).  Ako je trošak kreiranja novog objekta velik i kreiranje objekta je resursno zahtjevno tada se vrši kloniranje vec postojeceg objekata.  Prototype dizajn patern dozvoljava da se kreiraju prilagodeni objekti bez poznavanja njihove klase ili detalja kako je objekat kreiran. Protype patern se koristi kada je potrebno da se sakriju konkretne klase od klijenta, dodaju ili izbrišu nove klase za vrijeme izvršavanja, da se broj klasa u sistemu održi na minimumu, kada je potrebna promjena strukture podataka za vrijeme izvršavanja.
+Projekat:
+U našem projetu ovaj patern nije iskoristen. Meðutim, mogli smo ga iskoristiti za dobivanje svih korisnika ukoliko je potrebno da se kloniraju za neku novu upotrebu.
+
+
+3. Strategy pattern
+Strategy pattern omogucava izbor algoritma u toku rada. Umjesto da implementira jedan algoritam direktno, kod primi instrukcije za vrijeme pokretanja koje se koriste u porodici algoritama.  On omogucava algoritmu da varira nezavisno od klijenata koji ga koriste. Koristimo ga kad na primjer klasa koja vrši validaciju na primljenim podacima može koristiti ovaj pattern za odabir algoritma validacije u zavisnosti od vrste podataka, izvora podataka, izbora korisnika ili drugih faktora.
+Ovi faktori nisu poznati sve dok se ne pokrene kod i može zahtijevati radikalno razlicitu validaciju.
+Projekat:
+U našem projetu ovaj patern nije iskoristen. Meðutim, mogli smo ga iskoristiti upravo za navedenu validaciju podataka.
+
+
+4. State pattern
+Objekat mijenja nacin ponašanja na osnovu trenutnog stanja.
+Projekat:
+U našem projetu ovaj patern je iskoristen prilikom plaæanja smještaja postoje odredjeni naèini plaèanja, te u zavisnosti od odabranog naèina plaèanja, npr. preko kartice dolazi do provjere stanja na raèunu. Ukoliko nema dovoljno sredsta na raèunu korisnik se obavještava o tome, te se samim tim mijenja naèin ponašanja na osnovu trenutnog stanja.
+
+5. Iterator pattern
+Iterator pattern je pattern ponašanja. Iterator patern omogucava sekvencijalni pristup elementima kolekcije bez poznavanja kako je kolekcija strukturirana. Ovaj pattern se koristi kada je potrebno imati uniforan nacin pristupa bilo kojoj kolekciji.  Ako recimo želimo iz nekog razloga da primimo ArrayList, Array i sl., možemo iskoristiti iterator interface pomocu kojeg cemo najbolje omoguciti uniforan pristup i  napraviti bolji polimorfizam.
+Projekat:
+U našem projetu ovaj patern nije iskoristen. Meðutim, mogli smo ga iskoristiti ukoliko bi postojalo više vrsta kolekcija u programu (u nasem slucaju koristeni su samo nizovi).
+
+
+6.Mediator pattern
+Mediator pattern se koristi za smanjivanje složenosti komunikacije izmedu više objekata ili klasa.  Ovaj pattern obezbjeduje klasu medijatora koja obicno bavi sa svim komunikacijama izmedu razlicitih klasa.
+Projekat:
+U našem projetu ovaj patern nije iskoristen, buduæi da smo "spojili" korisnika i vlasnika u jednu klasu iz razloga što korisnik moze biti vlasnik, kao sto i vlasnik moze biti korisnik.
+
+
+7. Facade pattern
+Implementatori cesto koriste facade pattern kada je program vrlo složen ili teško razumljiv jer ima velik broj medusobno ovisnih klasa  ili zato što izvorni kod nije dostupan.  Ovaj pattern skriva složenosti veceg programa i pruža jednostavniji interfejs klijentu. U principu, jedna klasa predstavlja citav sistem.
+Projekat:
+U našem projetu ovaj patern je iskoristen u klasi HomeDestination, koja se sastoji od niza korisnika, te od niza smjestaja.
+
+
+8. Interpreter pattern
+U dobro strukturiranom okruženju cesto dolazi do razlicitih problema, koji bi bili lako rješivi kada bi se samo okruženje (domen) moglo opisati nekim 'jezikom'. 
+Tada bi interpreter tog jezika mogao lako da riješi probleme koji se javljaju.Interpreter pattern služi za evaluiranje gramatike nekog jezika i jezickih izraza. 
+Implementira se AbstractExpression interface koji koristi kompozitni pattern da bi riješio neki jezicki problem. 
+Obicno se koriste TerminalExpression i CompoundExpression klase koje služe za rekurzivno rješavanje problema interpretacije nekog jezickog izraza gdje je 
+CompoundExpression neki dio pravila koji poziva drugo pravilo za obradu izraza, dok je TerminalExpression bazni slucaj za neko pravilo.
+Projekat:
+U našem projetu ovaj patern je iskoristen prilikom validacije (npr. da li je uneseno dovoljno znakova, da li su velika i mala slova i sl).
+
+
+9. Observer pattern
+Observer patern je pattern u kojem objekat održava listu svojih zavisnika i automatski ih obaveštava o svim promjenama stanja, obicno pozivanjem jedne od njihovih metoda. Observer pattern se koristi ukoliko postoje jedna-na-više veze izmedu objekata takve da ako se jedan objekat modifikuje,ostali ce biti obavješteni automatski.
+Projekat:
+U našem projetu ovaj patern nije iskoristen buduæi da nema potrebe da se svi korisnici obavještavaju o promjenama stanja.
+
